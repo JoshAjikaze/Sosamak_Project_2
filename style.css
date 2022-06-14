@@ -46,6 +46,9 @@ a:hover
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 090%;
+    padding: 05px;
+    background: #fff ;
 }
 
 .box-element
@@ -55,7 +58,7 @@ a:hover
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding:0 600px 0 10px; 
+    /* padding:0 600px 0 10px;  */
 }
 
 .box-element > #banner
@@ -105,4 +108,24 @@ a:hover
     min-height: 30px;
     min-width: 30px;
     border-radius: 50%;
+}
+
+.banner-img
+{
+    width: 100%;
+}
+
+.banner-img img
+{
+    width: 100%;
+}
+
+#banner, .circles, .header
+{
+    position: absolute;
+}
+
+#banner
+{
+    margin-left: 35%;
 }
