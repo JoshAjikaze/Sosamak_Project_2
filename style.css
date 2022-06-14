@@ -129,3 +129,18 @@ a:hover
 {
     margin-left: 35%;
 }
+
+@media(max-width:500px)
+{
+    #banner
+    {
+        margin: 0;
+        /* align-items: center; */
+        /* justify-content: center; */
+    }
+
+    .box-element #banner > h2
+    {
+        font-size: 3rem;
+    }
+}
