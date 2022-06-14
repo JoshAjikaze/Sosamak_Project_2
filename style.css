@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500;700;900&display=swap');
+
+*
+{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    border:1px solid black;
+    font-family: 'Raleway', sans-serif;
+    color: #fff;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+.active
+{
+    background-color: #fdac53;
+}
+
+a:hover
+{
+    text-decoration: underline;
+}
+
+.btn
+{
+    padding: 10px 20px;
+    color: #212529;
+    background:#fdac53;
+    outline: none;
+}
+
+.container
+{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #777;
+}
+
+.header
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.box-element
+{
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding:0 600px 0 10px; 
+}
+
+.box-element > #banner
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 300px;
+}
+
+.box-element > #banner h5, .box-element > #banner h2
+{
+    font-size: 1.5rem; 
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.box-element > #banner h2
+{
+    font-size: 3.5rem;
+    font-weight: 900;
+}
+
+.box-element > #banner .btn-1
+{
+    /* display: block; */
+    width: 150px;
+}
+
+.box-element .circles
+{
+    height: 150px;
+    width: 35px;
+    /* position:sticky; */
+    justify-self: flex-start;
+}
+
+.circles
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.circles span
+{
+    min-height: 30px;
+    min-width: 30px;
+    border-radius: 50%;
+}
