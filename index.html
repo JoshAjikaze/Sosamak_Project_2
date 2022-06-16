@@ -4,41 +4,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" rel="stylesheet">
     <title>Document</title>
+    <link href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <!-- navigation bar beginning -->
         <div class="header">
-            <div class="logo">Dotcom</div>
-            <nav>
+            <div>
+                <div class="logo">
+                    <span>D</span>ot<span>C</span>om
+                 </div>
+                 <nav class="not-hidden">
+                     <a href="#" class="active">Home</a>
+                     <a href="#">About</a>
+                     <a href="#">Fuck off</a>
+                 </nav>
+                 <i onclick="showHidden()" class="fas fa-bars hidden"></i>
+            </div>
+
+            <nav id="nav-hidden" class="hidden nav-hidden">
                 <a href="#">Home</a>
                 <a href="#">About</a>
-                <a href="#">Services</a>
-                <a href="#">Pricing</a>
-                <a href="#">pages <i class="fas fa-caret-down"></i></a>
-                <a href="#">contact</a>
+                <a href="#">Fuck off</a>
             </nav>
+
         </div>
-
-        <div class="box-element">
-            <div class="banner-img"><img src="https://images.unsplash.com/photo-1541746972996-4e0b0f43e02a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt=""></div>
-
-            <div class="circles">
-                <span class="active"></span>
-                <span></span>
-                <span></span>
-            </div>
-
-            <div id="banner">
-                <h5>Creative agency</h5>
-                <h2>Highly Professional <br> Team Members</h2>
-                <a href="#" class="btn btn-1">Learn More</a>
-            </div>
-        </div>
-        
     </div>
+
+    <script>
+        var ronald = document.getElementById("nav-hidden");
+        function showHidden(){
+            if(ronald.style.display == 'none'){
+
+                ronald.style.display = 'flex';
+            }else{
+                ronald.style.display = 'none'
+            }
+        }
+
+    </script>
 </body>
 </html>
