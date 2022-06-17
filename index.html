@@ -32,6 +32,19 @@
 
         </div>
         
+        <div id="banner" class="banner-div banner-1">
+            <div class="div-dots">
+                <p></p>
+                <p></p>
+                <p></p>
+            </div>
+            <div class="banner">
+                <h3>CREATIVE AGENCY</h3>
+                <h1>Highly Professional Team Members</h1>
+                <a href="#">Learn More</a>
+            </div>
+        </div>
+
         <div class="banner-div banner-1">
             <div class="div-dots">
                 <p></p>
@@ -45,20 +58,7 @@
             </div>
         </div>
 
-        <div class="banner-div banner-1 hidden">
-            <div class="div-dots">
-                <p></p>
-                <p></p>
-                <p></p>
-            </div>
-            <div class="banner">
-                <h3>CREATIVE AGENCY</h3>
-                <h1>Highly Professional Team Members</h1>
-                <a href="#">Learn More</a>
-            </div>
-        </div>
-
-        <div class="banner-div banner-1 hidden">
+        <div class="banner-div banner-1">
             <div class="div-dots">
                 <p></p>
                 <p></p>
@@ -75,12 +75,15 @@
 
     <script>
         var ronald = document.getElementById("nav-hidden");
+        var banner = document.getElementById("banner");
         function showHidden(){
             if(ronald.style.display == 'none'){
 
                 ronald.style.display = 'flex';
+                banner.style.margin = '10vh 0 0 0';
             }else{
                 ronald.style.display = 'none'
+                banner.style.margin = "0"
             }
         }
 
