@@ -1,38 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <!-- <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    /> -->
+    <link
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="close" class="hidden-navigation">
+      <p>
+        <i
+          class="fas fa-times"
+          onclick="document.getElementById('close').style.display = 'none'; "
+        ></i>
+      </p>
+      <p>To be done later</p>
+    </div>
+    <style>
+      .hidden-navigation {
+        width: 100%;
+        min-height: 100vh;
+        background: #fff;
+        position: fixed;
+        z-index: 20;
+        display: none;
+        transition: 100s;
+      }
+    </style>
+    <script>
+      function shownew() {
+        document.getElementById("close").style.display = "flex";
+      }
+    </script>
     <div class="container">
-        <div class="header">
-            <div>
-                <div class="logo">
-                    <span>D</span>ot<span>C</span>om
-                 </div>
-                 <nav class="not-hidden">
-                     <a href="#" class="active">Home</a>
-                     <a href="#">About</a>
-                     <a href="#">Fuck off</a>
-                     <a href="#">Fuck off</a>
-                 </nav>
-                 <i onclick="showHidden()" class="fas fa-bars hidden"></i>
-            </div>
-
-            <nav id="nav-hidden" class="hidden nav-hidden">
-                <a href="#">Home</a>
-                <a href="#">About</a>
-                <a href="#">Fuck off</a>
-            </nav>
-
+      <div class="header">
+        <div>
+          <div class="logo"><span>D</span>ot<span>C</span>om</div>
+          <nav class="not-hidden">
+            <a href="#" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#">Fuck off</a>
+            <a href="#">Fuck off</a>
+          </nav>
+          <i onclick="shownew()" class="fas fa-bars hidden"></i>
         </div>
-        
-        <div id="banner" class="banner-div banner-1">
+
+        <nav id="nav-hidden" class="hidden nav-hidden">
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Fuck off</a>
+        </nav>
+      </div>
+
+      <!-- <div id="banner" class="banner-div banner-1">
             <div class="div-dots">
                 <p></p>
                 <p></p>
@@ -56,37 +87,89 @@
                 <h1>Highly Professional Team Members</h1>
                 <a href="#">Learn More</a>
             </div>
-        </div>
+        </div> -->
 
-        <div class="banner-div banner-1">
-            <div class="div-dots">
-                <p></p>
-                <p></p>
-                <p></p>
-            </div>
-            <div class="banner">
-                <h3>CREATIVE AGENCY</h3>
-                <h1>Highly Professional Team Members</h1>
-                <a href="#">Learn More</a>
-            </div>
+      <div class="banner-div banner-1">
+        <div class="div-dots">
+          <p></p>
+          <p></p>
+          <p></p>
         </div>
+        <div class="banner">
+          <h3>CREATIVE AGENCY</h3>
+          <h1>Highly Professional Team Members</h1>
+          <a href="#">Learn More</a>
+        </div>
+      </div>
+
+      <div class="about" id="about">
+        <div class="about-top">
+          <div class="about-img">
+            <img src="./about.jpg" alt="" />
+          </div>
+          <div class="about-right">
+            <p class="who-we-are">WHO WE ARE</p>
+            <p class="big-text">
+              Most Effective Creative Service Provider For Companies
+            </p>
+            <p class="many">
+              Eirmod est dolor nonumy sea amet dolore erat sit dolor et dolor
+              vero. Tempor ipsum at justo amet at ipsum justo. Aiam kasd sea sit
+              dolor duo elitr dolor amet, justo est ipsum amet dolor ut ipsum.
+              Labore diam et nonumy amet dolores. Volup sit labore dolores erat,
+              magna justo sed lorem kasd ea dolor. Labore sit clita invidunt,
+              est dolores lorem sed ipsum kasd no amet ipsum.
+            </p>
+            <a class="about-btn" href="#">Read More</a>
+          </div>
+        </div>
+        <div class="about-bottom">
+          <div>
+            <span>
+              <i class="fas fa-map-marker-alt"></i>
+            </span>
+
+            <span class="span-2">
+              <span class="our-office">Our Office </span>
+              <span> 123 Street, New York, USA </span>
+            </span>
+          </div>
+          <div>
+            <span>
+              <i class="fas fa-map-marker-alt"></i>
+            </span>
+
+            <span class="span-2">
+              <span class="our-office">Our Office </span>
+              <span> 123 Street, New York, USA </span>
+            </span>
+          </div>
+          <div>
+            <span>
+              <i class="fas fa-map-marker-alt"></i>
+            </span>
+
+            <span class="span-2">
+              <span class="our-office">Our Office </span>
+              <span> 123 Street, New York, USA </span>
+            </span>
+          </div>
+        </div>
+      </div>
     </div>
 
-
     <script>
-        var ronald = document.getElementById("nav-hidden");
-        var banner = document.getElementById("banner");
-        function showHidden(){
-            if(ronald.style.display == 'none'){
-
-                ronald.style.display = 'flex';
-                banner.style.margin = '20vh 0 0 0';
-            }else{
-                ronald.style.display = 'none'
-                banner.style.margin = "0"
-            }
+      var ronald = document.getElementById("nav-hidden");
+      var banner = document.getElementById("banner");
+      function showHidden() {
+        if (ronald.style.display == "none") {
+          ronald.style.display = "flex";
+          banner.style.margin = "20vh 0 0 0";
+        } else {
+          ronald.style.display = "none";
+          banner.style.margin = "0";
         }
-
+      }
     </script>
-</body>
+  </body>
 </html>

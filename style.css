@@ -1,202 +1,251 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500;700;900&display=swap");
 
-*
-{
-    margin:0;
-    padding: 0;
-    box-sizing: border-box;
-    border:1px solid blue;
-    font-family: 'Raleway', sans-serif;
-    /* color: #fff; */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 1px solid blue;
+  font-family: "Raleway", sans-serif;
+  scroll-behavior: smooth;
+  /* color: #fff; */
 }
 
-a
-{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
 
-.header .active 
-{
-    color: #fdac53;
+.header .active {
+  color: #fdac53;
 }
 
-.header
-{
-    width: 100%;
-    top:0;
-    left: 0;
-    min-height: 10px;
-    display: flex;
-    flex-direction: column;
-    /* flex-flow: col wrap; */
-    padding: 10px;
-    position: fixed;
-    background: #111;
-    color: #fff
+.header {
+  width: 100%;
+  top: 0;
+  left: 0;
+  min-height: 10px;
+  display: flex;
+  flex-direction: column;
+  /* flex-flow: col wrap; */
+  padding: 10px;
+  position: fixed;
+  background: #111;
+  color: #fff;
 }
 
-.header > div
-{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+.header > div {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.header .not-hidden a
-{
-    padding: 10px;
+.header .not-hidden a {
+  padding: 10px;
 }
 
-.logo
-{
- font-size: 3rem;
- font-weight: 900;
+.logo {
+  font-size: 3rem;
+  font-weight: 900;
 }
 
-.logo span
-{
-    color: #fdac53;
+.logo span {
+  color: #fdac53;
 }
 
-.hidden
-{
+.hidden {
+  display: none;
+}
+
+.not-hidden a {
+  color: #fff;
+}
+
+.banner-div {
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
+.banner-1 {
+  /* margin-top: 9.2vh; */
+  background-image: url("/carousel-2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.banner {
+  min-width: 50%;
+  min-height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-left: 25%;
+}
+
+.banner h3 {
+  font-weight: 100;
+  font-size: 1.7rem;
+}
+
+.banner h1 {
+  font-size: 3rem;
+}
+
+.banner a {
+  background-color: #fdac53;
+  width: 150px;
+  padding: 15px 0;
+  text-align: center;
+  color: #111;
+}
+
+.div-dots {
+  margin: 0px 20px;
+  min-width: 32px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.div-dots p {
+  min-width: 10px;
+  background-color: #fdac53;
+  height: 30px;
+  /* margin: 10px 0; */
+  border-radius: 50%;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  /* background-color: #fdac53; */
+}
+
+.about-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* padding: 100px 300px; */
+}
+
+.about-img {
+  padding: 10px;
+  border: 1px solid rgba(119, 119, 119, 0.37);
+}
+
+.about-img img {
+  width: 450px;
+}
+
+.about-right {
+  width: 40%;
+  min-height: 300px;
+  margin: 0px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.big-text {
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+.many {
+  color: #888;
+  margin: 20px 0;
+}
+
+.about-btn {
+  background: #fdac53;
+  width: 150px;
+  padding: 15px 0;
+  text-align: center;
+  color: #111;
+}
+
+.who-we-are {
+  width: 108.5px;
+  background: #fdac53;
+  color: #fff;
+}
+
+.about-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* padding-right: 10rem;
+  padding-left: 5rem; */
+  width: 100%;
+  height: 20rem;
+}
+
+.about-bottom div {
+  width: 20rem;
+  height: 7rem;
+  display: flex;
+  align-items: center;
+  margin: 0px 05rem;
+}
+
+.about-bottom span i {
+  font-size: 3rem;
+}
+
+.span-2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.span-2 span {
+  color: #888;
+}
+
+.span-2 .our-office {
+  font-weight: 800;
+  font-size: 1.5rem;
+  color: #111;
+}
+
+@media (max-width: 800px) {
+  .not-hidden {
     display: none;
-}
+  }
 
-.not-hidden a
-{
-    color:#fff;
-}
+  .hidden {
+    display: block;
+  }
 
+  .header .fa-bars {
+    font-size: 2rem;
+  }
 
+  #nav-hidden {
+    display: none;
+    flex-direction: column;
+  }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.banner-div
-{
-    width: 100%;
-    height: 70vh;
-    display: flex;
-    align-items: center;
+  .nav-hidden a {
     color: #fff;
+    padding: 10px 0;
+  }
+
+  .banner {
+    margin-left: 10px;
+  }
 }
 
-.banner-1
-{
-    /* margin-top: 9.2vh; */
-    background-image: url("/carousel-2.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-
-.banner
-{
-    min-width: 50%;
-    min-height: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    margin-left: 25%;
-}
-
-.banner h3
-{
-    font-weight: 100;
-    font-size: 1.7rem;
-}
-
-.banner h1
-{
-    font-size: 3rem;
-}
-
-.banner a
-{
-    background-color: #fdac53;
-    width: 150px;
-    padding: 15px 0;
-    text-align: center;
-    color: #111;
-}
-
-.div-dots
-{
-    margin:0px 20px;
-    min-width: 32px;
-    height: 200px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-}
-
-.div-dots p
-{
-    min-width: 10px;
-    background-color: #fdac53;
-    height: 30px;
-    /* margin: 10px 0; */
-    border-radius: 50%;
-}
-
-
-@media(max-width:800px){
-    .not-hidden
-    {
-        display: none;
-    }
-
-    .hidden
-    {
-        display: block;
-    }
-
-    .header .fa-bars
-    {
-        font-size: 2rem;
-    }
-
-    #nav-hidden
-    {
-        display: none;
-        flex-direction: column;
-    }
-    
-    .nav-hidden a
-    {
-        color: #fff;
-        padding: 10px 0;
-        
-    }
-
-    .banner
-    {
-        margin-left:10px;
-    }
-}
-
-@media(max-width:500px)
-{
-    .div-dots
-    {
-        width: 40px;
-    }
+@media (max-width: 500px) {
+  .div-dots {
+    width: 40px;
+  }
 }
 
 /* https://www.free-css.com/free-css-templates/page278/dotcom */
